@@ -38,9 +38,9 @@ m = LR()
 loss = nn.MSELoss()
 
 #%%
-# opt = optim.Adam([m.W], lr=0.1)
-opt = optim.SGD([m.W], lr=0.01)
-opt.zero_grad()
+opt = optim.Adam([m.W], lr=0.1)
+# opt = optim.SGD([m.W], lr=0.01)
+
 #%%
 
 epochs = np.arange(500)
